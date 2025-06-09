@@ -43,7 +43,7 @@ public class DbService : IDbService
                 Date = pm.Match.MatchDate,
                 Map = pm.Match.Map.Name,
                 MVPs = pm.MVPs,
-                Rating = (float) pm.Rating,
+                Rating = Math.Round((float) pm.Rating, 2),
                 Team1Score = pm.Match.Team1Score,
                 Team2Score = pm.Match.Team2Score,
                 Tournament = pm.Match.Tournament.Name
